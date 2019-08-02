@@ -14,4 +14,19 @@ $(function() {
 		$('#carouselWorks').carousel(index)
 		$('#modalWorks').modal('show')
 	})
+
+	$('#team-members').owlCarousel({
+		autoplay: true,
+		items: 3,
+		smartSpeed: 700,
+		loop: true,
+		responsive: {
+			0: {
+				items: 2,
+			},
+			800: {
+				items: 3,
+			},
+		},
+	})
 })

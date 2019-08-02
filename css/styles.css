@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i&display=swap');
 
 :root {
-	--primary-color: #34c6d3;
+	--primary-color: rgb(52, 198, 211);
+	--primary-color-light: rgba(52, 198, 211, 0.4);
 	--secondary-color: #41464b;
 	--accent-color: #64707b;
 }
@@ -33,6 +34,31 @@ body {
 [data-aos].animated {
 	visibility: visible;
 } */
+
+.carousel-indicators li {
+	background-color: var(--primary-color-light);
+}
+
+.carousel-indicators li.active {
+	background-color: var(--primary-color);
+}
+
+.tns-nav {
+	text-align: center;
+	margin: 0;
+}
+.tns-nav > [aria-controls] {
+	width: 9px;
+	height: 9px;
+	padding: 0;
+	margin: 0 5px;
+	border-radius: 50%;
+	background: var(--primary-color-light);
+	border: 0;
+}
+.tns-nav > .tns-nav-active {
+	background: var(--primary-color);
+}
 
 .bg-parallax {
 	background-repeat: no-repeat !important;
@@ -243,4 +269,64 @@ body {
 .carousel-inner .carousel-caption p {
 	color: lightgray;
 	margin-bottom: 2rem;
+}
+
+/* Team */
+
+.team-member {
+	margin: 0 15px;
+	max-width: 380px;
+}
+
+.team-member > img {
+	width: 100%;
+}
+
+.team-member-info {
+	padding: 10px 0 30px 0;
+}
+
+h4.team-member-name {
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	padding-top: 2px;
+}
+
+h4.team-member-designation {
+	color: var(--primary-color);
+	font-size: 15px;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 1px;
+	padding-top: 5px;
+}
+
+.social-list {
+	padding-left: 0;
+}
+
+.social-list li {
+	list-style: none;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-right: 6px;
+	margin-top: 10px;
+}
+
+.social-icon {
+	color: var(--accent-color);
+}
+
+.social-icon:hover {
+	color: var(--primary-color);
+}
+
+.owl-dot > span {
+	background: var(--primary-color-light) !important;
+}
+
+.owl-dot.active > span {
+	background: var(--primary-color) !important;
 }
