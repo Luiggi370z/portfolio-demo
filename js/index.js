@@ -29,4 +29,24 @@ $(function() {
 			},
 		},
 	})
+
+	$('#customers-testimonials').owlCarousel({
+		autoplay: true,
+		items: 1,
+		smartSpeed: 700,
+		loop: true,
+	})
+
+	$('.counter').counterUp({
+		delay: 10,
+		time: 2000,
+	})
+
+	$('#clients-list').owlCarousel({
+		autoplay: true,
+		items: 6,
+		smartSpeed: 700,
+		loop: true,
+		autoplayHoverPause: true,
+	})
 })

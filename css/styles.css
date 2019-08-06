@@ -155,6 +155,10 @@ body {
 	margin: 0 0 30px 0;
 }
 
+.content-title-white h3 {
+	color: white;
+}
+
 .content-title-underline {
 	height: 3px;
 	width: 30px;
@@ -318,8 +322,11 @@ h4.team-member-designation {
 .social-icon {
 	color: var(--accent-color);
 }
+.icon-white i {
+	color: #fff;
+}
 
-.social-icon:hover {
+.social-icon:hover i {
 	color: var(--primary-color);
 }
 
@@ -329,4 +336,261 @@ h4.team-member-designation {
 
 .owl-dot.active > span {
 	background: var(--primary-color) !important;
+}
+
+/* Testimonials */
+
+#testimonials-cover {
+	background-image: url('../assets/bg-testimonials.jpg');
+}
+
+#testimonials-cover .content-box {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+#customers-testimonials {
+	padding: 50px 0;
+}
+
+.testimonial img {
+	max-width: 120px;
+	margin: 0 auto;
+}
+
+.testimonial blockquote {
+	border: 0;
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+	color: #fff;
+	padding: 6px 150px;
+	position: relative;
+}
+
+.testimonial blockquote p {
+	color: #fff;
+}
+
+.testimonial blockquote::before {
+	content: '\201C';
+	top: 0;
+	left: 100px;
+}
+
+.testimonial blockquote::after {
+	content: '\201D';
+	bottom: 0;
+	right: 100px;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+	font-size: 80px;
+	font-style: normal;
+	line-height: 1;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.testimonial-author p {
+	color: #fff;
+	font-size: 17px;
+}
+
+.testimonial-author p strong {
+	font-weight: 700;
+	display: block;
+}
+
+/* Pricing */
+.pricing-box {
+	border: 3px solid var(--primary-color);
+	padding: 50px 0;
+	margin: 40px 0;
+}
+
+h4.pricing-title {
+	background: var(--primary-color);
+	color: #fff;
+	display: inline-block;
+	padding: 7px 15px;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 0 30px;
+}
+
+h3.pricing-value {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+h3.pricing-value sup {
+	font-size: 20px;
+	font-weight: normal;
+	vertical-align: super;
+}
+
+ul.pricing-spec {
+	list-style: none;
+	padding-left: 0;
+	margin: 20px 0 60px 0;
+}
+
+ul.pricing-spec li p {
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.pricing-box-lg {
+	padding: 90px 0;
+	margin: 0;
+	background-color: var(--primary-color);
+}
+
+.pricing-box-lg h4.pricing-title {
+	color: var(--primary-color);
+	background-color: #fff;
+}
+
+.pricing-box-lg ul.pricing-spec li p {
+	color: #fff;
+}
+
+/* Stats */
+
+#stats-cover {
+	background-image: url('../assets/bg-stats.jpg');
+}
+
+#stats .content-box {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.stats-item {
+	padding: 100px 0;
+}
+
+.stats-item i {
+	color: var(--primary-color);
+}
+
+.stats-item h2 {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 35px;
+	margin-bottom: 15px;
+}
+
+.stats-item p {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+/* Clients */
+
+.client {
+	padding: 40px 0;
+}
+
+/* Contact */
+
+footer {
+	background-color: var(--secondary-color);
+	padding-top: 30px;
+	border-top: 5px solid rgba(0, 0, 0, 0.1);
+}
+
+#contact-left h3,
+#contact-right h3 {
+	color: #fff;
+	font-size: 27px;
+	font-weight: 700;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#contact-left p {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+#contact-info {
+	background-image: url('../assets/world-map.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+address {
+	color: #fff;
+}
+
+.phone-fax-email strong {
+	font-weight: 700;
+}
+
+address strong,
+#phone-fax-email strong {
+	letter-spacing: 1px;
+}
+
+form .form-control {
+	background: transparent;
+	border-radius: 0;
+	border-color: #fff;
+	font-size: 17px;
+	font-weight: 300;
+	padding: 8px 16px;
+	margin-bottom: 20px;
+	color: #fff;
+}
+
+form .form-control:focus {
+	background: transparent;
+	color: #fff;
+}
+
+/* Footer */
+#footer-bottom {
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 30px 0;
+	margin-top: 60px;
+}
+
+#footer-copyrights p {
+	margin: 0;
+	color: #fff;
+	font-size: 13px;
+}
+
+#footer-menu {
+	float: left;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+#footer-menu ul {
+	list-style: none;
+	padding-left: 0px;
+	margin: 0;
+}
+
+#footer-menu ul li {
+	display: inline-block;
+}
+
+#footer-menu a {
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: 300;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+#footer-menu a:hover {
+	color: var(--primary-color);
 }
