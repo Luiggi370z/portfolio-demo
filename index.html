@@ -21,7 +21,64 @@
 		<link rel="stylesheet" href="css/owl.theme.default.min.css" />
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
-	<body>
+	<body data-spy="scroll" data-target="#vesco-navbar" data-offset="65">
+		<header>
+			<nav
+				id="vesco-navbar"
+				class="navbar navbar-dark vesco-top-nav fixed-top navbar-expand-lg"
+				role="navigation"
+			>
+				<a class="navbar-brand" href="#">
+					<img src="assets/logo.png" alt="logo" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#vesco-menu"
+					aria-controls="vesco-menu"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div id="vesco-menu" class="collapse navbar-collapse">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link" href="#home">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Services</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#work">Work</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#team">Team</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#testimonials">Testimonials</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#pricing">Pricing</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#stats">Stats</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#clients">Clients</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contact">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
 		<section id="home">
 			<div id="home-cover" class="bg-parallax animated fadeIn">
 				<div id="home-content-box">
@@ -1057,7 +1114,6 @@
 			<div id="footer-bottom">
 				<div class="container">
 					<div class="row">
-
 						<div class="col-md-6">
 							<div id="footer-copyrights">
 								<p>Copyrights &copy; 2019 All rights Reserved by Vesco Inc.</p>
@@ -1067,10 +1123,16 @@
 							<div id="footer-menu">
 								<ul>
 									<li><a class="smooth-scroll" href="#home">Home</a>/</li>
-									<li><a class="smooth-scroll" href="#services">Services</a>/</li>
+									<li>
+										<a class="smooth-scroll" href="#services">Services</a>/
+									</li>
 									<li><a class="smooth-scroll" href="#work">Work</a>/</li>
 									<li><a class="smooth-scroll" href="#team">Team</a>/</li>
-									<li><a class="smooth-scroll" href="#testimonials">Testimonials</a>/</li>
+									<li>
+										<a class="smooth-scroll" href="#testimonials"
+											>Testimonials</a
+										>/
+									</li>
 									<li><a class="smooth-scroll" href="#pricing">Pricing</a>/</li>
 									<li><a class="smooth-scroll" href="#stats">Stats</a></li>
 								</ul>
@@ -1080,8 +1142,6 @@
 				</div>
 			</div>
 		</footer>
-
-
 
 		<script
 			src="https://code.jquery.com/jquery-3.4.1.min.js"

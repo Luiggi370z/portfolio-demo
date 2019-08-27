@@ -49,4 +49,12 @@ $(function() {
 		loop: true,
 		autoplayHoverPause: true,
 	})
+
+	$(window).scroll(function() {
+		if ($(this).scrollTop() < 50) {
+			$('nav').removeClass('vesco-top-nav')
+		} else {
+			$('nav').addClass('vesco-top-nav')
+		}
+	})
 })
