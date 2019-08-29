@@ -48,6 +48,23 @@ $(function() {
 		smartSpeed: 700,
 		loop: true,
 		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1,
+			},
+			500: {
+				items: 1,
+			},
+			600: {
+				items: 2,
+			},
+			768: {
+				items: 3,
+			},
+			992: {
+				items: 6,
+			},
+		},
 	})
 
 	$(window).scroll(function() {
@@ -72,5 +89,9 @@ $(function() {
 			1250,
 			'easeInOutExpo',
 		)
+	})
+
+	$('.navbar-collapse ul li a').on('click touch', function() {
+		$('.navbar-toggler').click()
 	})
 })
