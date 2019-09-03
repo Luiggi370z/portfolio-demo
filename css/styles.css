@@ -274,7 +274,11 @@ body {
 
 .img-wrapper img:hover {
 	transform: scale(1.5);
+	-webkit-transition: -webkit-transform 0.5s ease;
+	transition: -webkit-transform 0.5s ease;
+	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
+	transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .carousel-inner .carousel-caption {
@@ -294,7 +298,7 @@ body {
 
 .team-member {
 	margin: 0 15px;
-	max-width: 380px;
+	/* max-width: 380px; */
 }
 
 .team-member > img {

@@ -22,9 +22,15 @@ $(function() {
 		loop: true,
 		responsive: {
 			0: {
+				items: 1,
+			},
+			500: {
+				items: 1,
+			},
+			600: {
 				items: 2,
 			},
-			800: {
+			768: {
 				items: 3,
 			},
 		},
